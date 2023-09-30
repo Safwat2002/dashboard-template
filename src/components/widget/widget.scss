@@ -1,0 +1,56 @@
+.widget{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    // here we can use box-shadow generator sites
+    -webkit-box-shadow: 1px 1px 6px -2px rgba(7,6,7,0.79); 
+    box-shadow: 1px 1px 6px -2px rgba(7,6,7,0.79);
+    
+    border-radius: 10px;
+    height: 100px;
+
+    .left, .right{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title{
+            font-weight: bold;
+            font-size:12px;
+            color:rgb(160,160,160);
+        }
+
+        .counter{
+            font-style: 28px;
+            font-weight: 400;
+        }
+
+        .link{
+            font-size: 12px;
+            border-bottom: 1px solid gray;
+
+        }
+
+        .percentage{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            
+            &.positive{
+                color:green
+            }
+
+            &.negative{
+                color:red
+            }
+        }
+
+        .icon{
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 5px;
+            align-self: flex-end;
+        }
+    }
+}
